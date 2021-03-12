@@ -1,0 +1,2 @@
+execute if score time_stop spells matches 1 as @e[ type= !player, tag= !time_stop, limit= 10 ] run function spells:time_stop/stop_self
+execute if score time_stop spells matches 0 as @e[ tag= time_stop, limit= 10 ] run function spells:time_stop/start_self

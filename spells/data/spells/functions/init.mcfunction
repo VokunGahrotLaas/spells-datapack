@@ -1,8 +1,13 @@
+# spells
+scoreboard objectives remove spells
+scoreboard objectives add spells dummy
+
 # spells_const
 scoreboard objectives remove spells_const
 scoreboard objectives add spells_const dummy
 
 # sub-init
+function spells:time_stop/init
 function spells:cast/init
 function spells:triggers/init
 

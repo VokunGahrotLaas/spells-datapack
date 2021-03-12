@@ -1,0 +1,1 @@
+scoreboard players set init spells 0
