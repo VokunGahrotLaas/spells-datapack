@@ -1,0 +1,12 @@
+{
+	"parent": "item/handheld_rod",
+	"textures": {
+		"layer0": "item/carrot_on_a_stick"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 10000001 }, "model": "item/spells/cast/explosion" },
+		{ "predicate": { "custom_model_data": 10000002 }, "model": "item/spells/cast/freeze/raycasted" },
+		{ "predicate": { "custom_model_data": 10000003 }, "model": "item/spells/cast/freeze/local" },
+		{ "predicate": { "custom_model_data": 10000004 }, "model": "item/spells/cast/stop_time" }
+	]
+}
