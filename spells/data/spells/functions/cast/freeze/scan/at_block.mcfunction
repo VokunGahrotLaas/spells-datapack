@@ -1,1 +1,1 @@
-execute unless block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:packed_ice
+execute unless block ~ ~ ~ minecraft:air if entity @s[ distance= ..4.1 ] run setblock ~ ~ ~ minecraft:packed_ice

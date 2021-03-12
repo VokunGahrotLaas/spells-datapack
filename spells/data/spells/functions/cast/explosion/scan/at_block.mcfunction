@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ minecraft:air if entity @s[ distance= ..4.1 ] run setblock ~ ~ ~ air replace
