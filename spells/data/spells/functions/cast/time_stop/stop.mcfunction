@@ -1,4 +1,4 @@
-tag @s add cast_time_stop
+tag @s add tmp_no_time_stop
 scoreboard players set stopped spl_ts 1
 gamerule doMobSpawning false
 gamerule doDaylightCycle false
