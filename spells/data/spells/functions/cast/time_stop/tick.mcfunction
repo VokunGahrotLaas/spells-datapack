@@ -1,4 +1,9 @@
 scoreboard players set ed spl_ts 0
 
-execute if score stopped spl_ts matches 0 if entity @e[ tag= time_stop ] unless score ed spl_ts = ept spl_ts run function spells:cast/time_stop/rec_start
-execute if score stopped spl_ts matches 1 if entity @e[ type= !player, tag= !time_stop ] unless score ed spl_ts = ept spl_ts run function spells:cast/time_stop/rec_stop
+execute if score stopped spl_ts matches 0 unless score ed spl_ts = ept spl_ts as @e[ type= !player, tag= time_stop, limit= 1 ] run function spells:cast/time_stop/rec_start_e
+execute if score stopped spl_ts matches 1 unless score ed spl_ts = ept spl_ts as @e[ type= !player, tag= !time_stop, tag= !no_time_stop, limit= 1 ] run function spells:cast/time_stop/rec_stop_e
+
+execute if score stopped spl_ts matches 0 as @a[ tag= time_stop ] run function spells:cast/time_stop/start_p
+execute if score stopped spl_ts matches 1 as @a[ tag= !time_stop, tag= !no_time_stop, tag= !cast_time_stop ] run function spells:cast/time_stop/stop_p
+
+execute as @a[ tag= time_stop ] run tp @s @e[ tag= player_time_stop, limit= 1, sort= nearest ]
