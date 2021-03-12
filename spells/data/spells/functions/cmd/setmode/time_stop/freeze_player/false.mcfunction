@@ -1,0 +1,1 @@
+scoreboard players set freeze_player spl_ts 0

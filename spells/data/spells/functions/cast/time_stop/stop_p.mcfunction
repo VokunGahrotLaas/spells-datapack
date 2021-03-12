@@ -4,9 +4,13 @@ execute as @e[ tag= current ] run tag @s remove current
 
 # set playerGameType
 execute store result score playerGameType spl_ts run data get entity @s playerGameType
-execute unless score playerGameType spl_ts matches 3 run gamemode spectator @s
+execute if score gamemode spl_ts matches 0 run gamemode survival @s
+execute if score gamemode spl_ts matches 1 run gamemode creative @s
+execute if score gamemode spl_ts matches 2 run gamemode adventure @s
+execute if score gamemode spl_ts matches 3 run gamemode spectator @s
 execute if score playerGameType spl_ts matches 0 run tag @s add playerGameType0
 execute if score playerGameType spl_ts matches 1 run tag @s add playerGameType1
 execute if score playerGameType spl_ts matches 2 run tag @s add playerGameType2
+execute if score playerGameType spl_ts matches 3 run tag @s add playerGameType3
 
 tag @s add time_stop
