@@ -7,6 +7,9 @@ execute if score tick_done spells matches 0 run tellraw @a[ tag= spells_debug ] 
 # set tick_done to 0
 scoreboard players set tick_done spells 0
 
+# playerID
+execute as @a unless score @s spl_playerID matches 0.. run function spells:new_player_id
+
 # cast
 function spells:time_stop/tick
 function spells:cast/tick

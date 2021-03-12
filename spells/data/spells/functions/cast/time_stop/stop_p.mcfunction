@@ -1,6 +1,9 @@
-execute at @s run summon minecraft:armor_stand ~ ~ ~ { Tags: [ "current", "no_time_stop", "player_time_stop" ], Marker: 1, Invisible: 1, Invulnerable: 1, NoGravity: 1 }
-execute at @s rotated as @s run tp @e[ tag= current, limit= 1 ] ~ ~ ~ ~ ~
-execute as @e[ tag= current ] run tag @s remove current
+# summon cloud
+execute at @s as @e[ type= area_effect_cloud, tag= spells, tag= time_stop ] if score @s spl_ts_cloudID = @p spl_playerID run kill @s
+execute at @s run summon area_effect_cloud ~ ~ ~ { Tags: [ "spells", "time_stop", "new" ], Age: -2147483648, Duration: -1, WaitTime: -2147483648 }
+tp @e[ type= area_effect_cloud, tag= spells, tag= time_stop, tag= new ] @s
+scoreboard players operation @e[ type= area_effect_cloud, tag= spells, tag= time_stop, tag= new, limit= 1 ] spl_ts_cloudID = @s spl_playerID
+tag @e[ type= area_effect_cloud, tag= spells, tag= time_stop, tag= new ] remove new
 
 # set playerGameType
 execute store result score playerGameType spl_ts run data get entity @s playerGameType

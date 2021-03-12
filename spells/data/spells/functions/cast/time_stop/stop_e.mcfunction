@@ -13,5 +13,14 @@ execute store result score NoGravity spl_ts run data get entity @s NoGravity
 execute if score NoGravity spl_ts matches 0 run data modify entity @s NoGravity set value 1
 execute if score NoGravity spl_ts matches 0 run tag @s add NoGravity
 
+# Fuse
+execute store result score @s spl_ts_Fuse run data get entity @s Fuse
+
+# Time
+execute store result score @s spl_ts_Time run data get entity @s Time
+
+# Motion
+data modify entity @s Motion set value [0.0d, 0.0d, 0.0d]
+
 # add tag
 tag @s add time_stop

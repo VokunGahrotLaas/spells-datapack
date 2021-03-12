@@ -1,4 +1,5 @@
-execute at @s run kill @e[ tag= player_time_stop, limit= 1, sort= nearest ]
+# kill cloud
+execute at @s as @e[ type=area_effect_cloud, tag= spells, tag= time_stop ] if score @s spl_ts_cloudID = @p spl_playerID run kill @s
 
 # if tag playerGameType0
 execute if entity @s[ tag = playerGameType0 ] run gamemode survival @s

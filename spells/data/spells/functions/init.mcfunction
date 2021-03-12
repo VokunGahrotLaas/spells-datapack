@@ -29,5 +29,10 @@ scoreboard players set init spells 1
 # tick_done
 scoreboard players set tick_done spells 1
 
+# playerID
+scoreboard objectives remove spl_playerID
+scoreboard objectives add spl_playerID dummy
+scoreboard players set playerID spells 0
+
 # debug info
 tellraw @a[ tag= spells_debug ] [ { "text": "[spells] ", "color": "dark_purple" }, { "text": "spells:init done !", "color": "light_purple" } ]
