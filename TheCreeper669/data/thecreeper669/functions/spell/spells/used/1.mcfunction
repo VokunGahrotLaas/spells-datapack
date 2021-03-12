@@ -1,0 +1,9 @@
+execute if entity @s[ nbt= { Inventory: [ { Slot: 0b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/0
+execute if entity @s[ nbt= { Inventory: [ { Slot: 1b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/1
+execute if entity @s[ nbt= { Inventory: [ { Slot: 2b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/2
+execute if entity @s[ nbt= { Inventory: [ { Slot: 3b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/3
+execute if entity @s[ nbt= { Inventory: [ { Slot: 4b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/4
+execute if entity @s[ nbt= { Inventory: [ { Slot: 5b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/5
+execute if entity @s[ nbt= { Inventory: [ { Slot: 6b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/6
+execute if entity @s[ nbt= { Inventory: [ { Slot: 7b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/7
+execute if entity @s[ nbt= { Inventory: [ { Slot: 8b, id: "minecraft:stick", tag: { spell: 1 } } ] } ] run function thecreeper669:spell/spells/used/1/8

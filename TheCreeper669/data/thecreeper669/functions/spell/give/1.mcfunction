@@ -1,0 +1,1 @@
+give @s minecraft:blaze_rod{ display: { Name: "\"Little BOOM\"", Lore: [ "Point and shoot !", "Reloading time: 5s" ] }, spell: 1 }

@@ -1,0 +1,1 @@
+give @s minecraft:blaze_rod{ display: { Name: "\"Modo Little BOOM\"", Lore: [ "Point and shoot !", "Reloading time: 0s", "Modo" ] }, spell: -1 }
