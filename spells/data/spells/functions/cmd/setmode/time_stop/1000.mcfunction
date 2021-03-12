@@ -1,0 +1,1 @@
+scoreboard players set ept spl_ts 1000
