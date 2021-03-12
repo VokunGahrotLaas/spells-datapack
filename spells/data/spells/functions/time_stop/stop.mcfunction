@@ -1,4 +1,4 @@
-scoreboard players set time_stop spells 1
+scoreboard players set stopped spl_ts 1
 gamerule doMobSpawning false
 gamerule doDaylightCycle false
 gamerule disableRaids true

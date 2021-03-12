@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick{ CustomModelData: 10000004, spells: { stop_time: 1 }, display: { Name: "\"Stop Time\"", Lore: [ "stop_time" ] } }
