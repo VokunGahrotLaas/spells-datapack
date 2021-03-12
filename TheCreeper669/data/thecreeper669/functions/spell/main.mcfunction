@@ -27,7 +27,7 @@ execute as @a[ tag= spell, tag= !carrot ] run replaceitem entity @s weapon.offha
 execute as @a[ gamemode= survival, tag= spell, tag= !carrot ] run scoreboard players set @s action 0
 
 # cast spell if 'action' >= 1
-execute as @a[ scores= {spell_action= 1.. }, tag= spell ] run function thecreeper669:spell/cast
+execute as @a[ scores= {action= 1.. }, tag= spell ] run function thecreeper669:spell/cast
 
 # remove carrot tag if carrot tag
 execute as @a[ tag= carrot ] run tag @s remove carrot

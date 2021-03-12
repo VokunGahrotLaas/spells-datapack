@@ -15,4 +15,4 @@ execute if entity @s[ tag= spell_1_casted ] run replaceitem entity @s weapon.mai
 execute if entity @s[ tag= spell_1_casted ] run tag @s remove spell_1_casted
 
 # all
-scoreboard players set @s spell_action 0
+scoreboard players set @s action 0
