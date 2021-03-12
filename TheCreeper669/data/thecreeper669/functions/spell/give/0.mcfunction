@@ -1,1 +1,0 @@
-give @s minecraft:blaze_rod{ display: { Name: "\"Modo Test\"", Lore: [ "Run a test", "Reloading time: 0s", "Modo" ] }, spell: 0 }
