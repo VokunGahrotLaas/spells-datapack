@@ -1,0 +1,1 @@
+execute at @s run function spells:cast/time_stop/spell

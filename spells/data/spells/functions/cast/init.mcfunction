@@ -11,4 +11,4 @@ function spells:cast/freeze/init
 function spells:cast/time_stop/init
 
 # debug info
-tellraw @a[ tag= spells_debug ] [ { "text": "[spells] ", "color": "white" }, { "text": "spells:cast/init done !", "color": "yellow" } ]
+tellraw @a[ tag= spells_debug ] [ { "text": "[spells] ", "color": "dark_purple" }, { "text": "spells:cast/init done !", "color": "blue" } ]

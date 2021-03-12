@@ -6,4 +6,4 @@ scoreboard objectives add spells_freeze dummy
 scoreboard players set radius spells_freeze 11
 
 # debug info
-tellraw @a[ tag= spells_debug ] [ { "text": "[spells] ", "color": "white" }, { "text": "spells:cast/freeze/init done !", "color": "yellow" } ]
+tellraw @a[ tag= spells_debug ] [ { "text": "[spells] ", "color": "dark_purple" }, { "text": "spells:cast/freeze/init done !", "color": "green" } ]
