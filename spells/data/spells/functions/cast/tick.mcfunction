@@ -1,5 +1,6 @@
 # sub-tick
 function spells:cast/time_stop/tick
+function spells:cast/arrow/tick
 
 # execute directory if :
 #	Holds spells-type carrot_on_a_stick

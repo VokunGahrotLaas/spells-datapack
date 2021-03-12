@@ -1,0 +1,3 @@
+execute as @e[ tag= spells, tag= arrow, tag= !time_stop ] store result entity @s Motion[0] double 0.01 run scoreboard players get @s splx
+execute as @e[ tag= spells, tag= arrow, tag= !time_stop ] store result entity @s Motion[1] double 0.01 run scoreboard players get @s sply
+execute as @e[ tag= spells, tag= arrow, tag= !time_stop ] store result entity @s Motion[2] double 0.01 run scoreboard players get @s splz

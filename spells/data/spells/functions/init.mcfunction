@@ -6,6 +6,18 @@ scoreboard objectives add spells dummy
 scoreboard objectives remove spells_const
 scoreboard objectives add spells_const dummy
 
+# splx
+scoreboard objectives remove splx
+scoreboard objectives add splx dummy
+
+# sply
+scoreboard objectives remove sply
+scoreboard objectives add sply dummy
+
+# splz
+scoreboard objectives remove splz
+scoreboard objectives add splz dummy
+
 # sub-init
 function spells:time_stop/init
 function spells:cast/init

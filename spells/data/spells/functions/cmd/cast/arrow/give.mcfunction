@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick{ CustomModelData: 10000005, spells: { arrow: 1 }, display: { Name: "\"Arrow\"", Lore: [ "Spells", "Arrow" ] } }
