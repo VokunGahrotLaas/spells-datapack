@@ -1,9 +1,12 @@
-execute as @e[ type= armor_stand, name= spells, tag= dummy ] run kill @s
-
+# spells dummy
+execute as @e[ tag= dummy ] run kill @s
 summon minecraft:armor_stand ~ ~ ~ { CustomName: "{ \"text\": \"spells\", \"color\": \"dark_purple\" }", Tags: [ "dummy" ], Marker: 1, Invisible: 1, Invulnerable: 1, NoGravity: 1 }
 
-execute as @e[ type= minecraft:armor_stand, name= spells, tag= dummy ] run function spells:time/setup
+# triggers
+function spells:triggers/setup
 
-execute as @e[ type= minecraft:armor_stand, name= spells, tag= dummy ] run function spells:spells/setup
+# spells_cast
+function spells:cast/setup
 
-tellraw @a {"text": "[Server] spells:setup done !", "color": "green"}
+# finished
+tellraw @a [ { "text": "[Server] ", "color": "white" }, { "text": "spells:setup done !", "color": "green" } ]

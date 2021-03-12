@@ -1,1 +1,0 @@
-execute as @e[ type= minecraft:armor_stand, name= spells, tag= dummy, limit= 1 ] run function spells:admins/real/particles/main

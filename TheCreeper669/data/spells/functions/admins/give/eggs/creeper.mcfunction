@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick{ spells: { elements: { 1: 2, 2: 1 } }, display: { Name: "\"Creeper\"", Lore: [ "Test" ] } }
