@@ -1,0 +1,1 @@
+execute at @s run function spells:cast/freeze/spell

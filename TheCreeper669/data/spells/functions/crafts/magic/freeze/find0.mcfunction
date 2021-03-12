@@ -1,1 +1,0 @@
-execute if entity @s[ nbt= { Item: { id: "minecraft:diamond" } } ] run function spells:crafts/magic/freeze/find1
